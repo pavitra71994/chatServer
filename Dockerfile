@@ -1,4 +1,4 @@
 FROM openjdk:17
-ADD ./out/production/ChatAppApplication/ /tmp
-WORKDIR /tmp
-ENTRYPOINT ["java","ChatAppApplication"]
+VOLUME /tmp
+COPY target/*.jar chatApp-3.1.1..jar
+ENTRYPOINT ["java","-jar","/chatApp-3.1.1.jar"]
