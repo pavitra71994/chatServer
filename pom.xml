@@ -98,6 +98,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>chatserver</finalName>
 	</build>
 	<repositories>
 		<repository>
