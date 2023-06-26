@@ -18,6 +18,7 @@ public class ChatController {
     MessageService messageService;
     @MessageMapping("/message")
     @SendTo("/chatroom/public")
+    @CrossOrigin("*")
     public Message saveMessage(@Payload Message message) {
         return messageService.saveMessage(message);
     }
